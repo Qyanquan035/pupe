@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: orange !important;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold !important;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .change {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbar .toggle_btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer !important;
+    display: none;
+}
+
+.btnLogin {
+    background-color: crimson;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold !important;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.btnLogin:hover {
+    scale: 1.05;
+    color: white;
+}
+
+.btnLogin:active {
+    scale: 0.95;
+}
+
+.btnRegistry {
+    background-color: crimson;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold !important;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.btnRegistry:hover {
+    scale: 1.05;
+    color: white;
+}
+
+.btnRegistry:active {
+    scale: 0.95;
+}
+
+.dropmenu {
+    position: absolute;
+    right: 2rem;
+    top: 50px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: height 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropmenu.open {
+    height: 365px;
+}
+
+.dropmenu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropmenu li .btnLogin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropmenu li .btnRegistry {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 824px) {
+
+    .navbar .links,
+    .navbar .change {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropmenu {
+        display: block;
+    }
+}

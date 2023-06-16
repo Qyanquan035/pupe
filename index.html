@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="./CSS/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* Footer section */
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .content-item {
+        padding: 0 10px;
+        width: 50%;
+      }
+
+      .content-item h4 {
+        color: crimson;
+      }
+
+      .content-item ul li {
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      .footer-content .input-field {
+        padding: 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      /* Social icon */
+      .social {
+        font-size: 32px;
+        color: crimson;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="#" title="Logo">
+            <img
+              src="./Images/logo/logoipsum-288.svg"
+              alt="Shop Logo"
+              class="img-responsive2"
+            />
+          </a>
+        </div>
+
+        <div class="menu text-right">
+          <ul>
+            <li>
+              <i class="fa-solid fa-house" style="color: crimson"></i>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-layer-group" style="color: crimson"></i>
+              <a href="categories.html">Categories</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-shirt" style="color: crimson"></i>
+              <a href="foods.html">Clothes</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-shirt" style="color: crimson"></i>
+              <a href="about.html">About Us</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" style="color: crimson"></i>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" style="color: crimson"></i>
+              <a href="">1800 0912</a>
+            </li>
+            <!-- <li>
+              <i class="fa-solid fa-cart-shopping" style="color: crimson"></i>
+              <a href="">Giỏ hàng</a>
+            </li> -->
+            <li>
+              <a href="./PHP/login.php" class="btn btn-primary">Login</a>
+            </li>
+            <li>
+              <a href="./PHP/registry.php" class="btn btn-primary">Registry</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="food-search text-center">
+      <div class="container">
+        <form action="food-search.html" method="POST">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search for Clothes.."
+            required
+          />
+          <input
+            type="submit"
+            name="submit"
+            value="Search"
+            class="btn btn-primary"
+          />
+        </form>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <h2 class="text-center">Explore Clothes</h2>
+
+        <a href="categories-hoodie.html">
+          <div class="box-3 float-container">
+            <img
+              src="./Images/logo/hoodie.png"
+              alt="Hoodie"
+              class="img-responsive img-curve"
+            />
+
+            <h3 class="float-text text-white">Hoodie</h3>
+          </div>
+        </a>
+        <a href="categories-short.html">
+          <div class="box-3 float-container">
+            <img
+              src="./Images/logo/short.webp"
+              alt="Quần Short"
+              class="img-responsive img-curve"
+            />
+
+            <h3 class="float-text text-white">Quần short</h3>
+          </div>
+        </a>
+        <a href="categories-T-shirt.html">
+          <div class="box-3 float-container">
+            <img
+              src="./Images/logo/T-shirt.png"
+              alt="Áo Thun"
+              class="img-responsive img-curve"
+            />
+
+            <h3 class="float-text text-white">Áo thun</h3>
+          </div>
+        </a>
+
+        <div class="clearfix"></div>
+      </div>
+    </section>
+
+    <section class="food-menu">
+      <div class="container">
+        <h2 class="text-center">Clothes</h2>
+        <!-- 6 tab đầu -->
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/áo-1.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>Hoodie hình chú chó</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">390.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Áo hoodie chất nỉ In hình chú chó con màu hồng dễ thương
+            </p>
+          </div>
+        </div>
+
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/áo-2.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>Hoodie khủng long</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">400.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Áo Hoodie chất nỉ có túi trước In hình khủng long siêu đẹp.
+            </p>
+          </div>
+        </div>
+
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/áo-3.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>Hoodie hồng</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">350.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Áo hoodie nam nữ nỉ ngoại in hình chú chó con, chất nỉ bông dày dặn nón 2 lớp thích hợp làm áo cặp MixASale.
+            </p>
+          </div>
+        </div>
+
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/áo-4.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>Hoodie FLEXIBLE</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">400.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Áo Hoodie Form Rộng Màu Đen Tối Giản. Áo Hoodie Nam Có Mũ, Dây Rút. Hoodie Local Brand.
+            </p>
+          </div>
+        </div>
+
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/áo-5.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>Áo thun cá sấu</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">100.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Chất Liệu Cotton cvc 65% Cotton 35% Polyeste, Cổ áo cổ tròn bo dệt, Phong cách Hàn Quốc.
+            </p>
+          </div>
+        </div>
+
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/áo-6.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>Áo thun in hình hoạ tiết nhẹ nhàng</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">150.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Freesize 75kg. Giúp bạn trở nên năng động, khỏe khoắn và thu hút mọi ánh nhìn. Màu sắc: 100% như hình.
+            </p>
+          </div>
+        </div>
+        <!-- 6 câu sau -->
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/áo-7.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>Áo thun quỷ đỏ</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">200.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Chất liệu 100% cotton, co dãn và thấm hút mồ hôi tốt, Form áo rộng, phù hợp với nhiều phong cách và dáng người khác nhau.
+            </p>
+          </div>
+        </div>
+
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/áo-8.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>Áo thun hình con cọp</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">200.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Chất liệu 100% cotton, co dãn và thấm hút mồ hôi tốt, Màu nhuộm được xử lý nhiệt và giặt công nghiệp nên có độ bền màu cao.
+            </p>
+          </div>
+        </div>
+
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/quần-1.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>QUẦN SHORT NAM FROM NGẮN KAKI THUN CO GIÃN</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">250.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Design is a series of creative choices - it's a collaborative
+              effort, an evolutionary process.
+            </p>
+          </div>
+        </div>
+
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/quần-2.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>Quần short nam 2 lớp Strong Athlete Division hàng cao cấp</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">295.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Quần Short Gym nam màu Basic đen với điểm nhấn logo hoạ tiết thêu cực đẹp, Chất liệu thun Poly 2 da dày dặn và co giãn 4 chiều, thấm hút mồ hôi cực tốt và cảm giác thoải mái cho người mặc.
+            </p>
+          </div>
+        </div>
+
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/quần-3.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>Quần short nữ</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">100.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Design is a series of creative choices - it's a collaborative
+              effort, an evolutionary process.
+            </p>
+          </div>
+        </div>
+
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img
+              src="./Images/quần-4.jpg"
+              alt="Chicke Hawain Pizza"
+              class="img-responsive img-curve"
+            />
+          </div>
+
+          <div class="food-menu-desc">
+            <h4>Quần short nữ</h4>
+            <div class="flex">
+              <a href="order.html" class="btn btn-primary">Order Now</a>
+              <p class="food-price">100.000 vnđ</p>
+            </div>
+
+            <p class="food-detail">
+              Design is a series of creative choices - it's a collaborative
+              effort, an evolutionary process.
+            </p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <p class="text-center">
+        <a href="#">See All Clothes</a>
+      </p>
+    </section>
+
+    <!-- <section class="social">
+      <div class="container text-center">
+        <ul>
+          <li>
+            <a href="#">
+              <img
+                src="https://img.icons8.com/fluent/50/000000/facebook-new.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="https://img.icons8.com/fluent/50/000000/instagram-new.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://img.icons8.com/fluent/50/000000/twitter.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+
+    <section class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="content-item">
+            <p style="font-size: 16px; margin-bottom: 15px">
+              “Đặt sự hài lòng của khách hàng là ưu tiên số 1 trong mọi suy nghĩ
+              hành động của mình” là sứ mệnh, là triết lý, chiến lược.. luôn
+              cùng Logoipsum tiến bước
+            </p>
+            <h4 style="margin-bottom: 8px">Đăng ký nhận thông tin</h4>
+
+            <!-- <input type="text" name="email" required placeholder="Nhập Email" />
+            <input type="submit" value="Đăng ký" /> -->
+
+            <form action="food-search.html" method="POST">
+              <input
+                type="search"
+                name="search"
+                placeholder="Nhập email đăng ký của bạn"
+                class="input-field"
+              />
+              <input
+                type="submit"
+                name="submit"
+                value="Đăng ký"
+                class="input-field"
+                style="background-color: crimson; color: #fff; cursor: pointer"
+              />
+            </form>
+            <div class="social">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-twitch"></i>
+            </div>
+          </div>
+
+          <div class="content-item">
+            <h4>Về Logoipsum</h4>
+            <ul>
+              <li>Giới thiệu</li>
+              <li>Liên hệ</li>
+              <li>Tuyển dụng</li>
+              <li>Tin tức</li>
+              <li>Hệ thống cửa hàng</li>
+              <li>Hàng mới về</li>
+            </ul>
+          </div>
+          <div class="content-item">
+            <h4>Hỗ trợ khách hàng</h4>
+            <ul>
+              <li>Hướng dẫn chọn size</li>
+              <li>Chính sách khách hàng thân thiết</li>
+              <li>Chính sách bảo hành, đổi/trả</li>
+              <li>Chính sách bảo mật</li>
+              <li>Thanh toán, giao nhận</li>
+              <li>Chính sách bảo mật thông tin khách hàng</li>
+            </ul>
+          </div>
+          <div class="content-item">
+            <h4>Công ty thời trang Logoipsum</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot" style="color: crimson"></i>
+                Công ty cổ phần Thời trang YODY
+              </li>
+              <li>
+                <i class="fa-solid fa-store" style="color: crimson"></i>
+                Tìm cửa hàng gần bạn nhất
+              </li>
+              <li>
+                <i class="fa-solid fa-phone" style="color: crimson"></i>
+                Liên hệ đặt hàng: 1800 0912
+              </li>
+              <li>
+                <i class="fa-regular fa-envelope" style="color: crimson"></i>
+                Email: logoipsum@.vn
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="container text-center">
+          <p>All rights reserved. Designed By <a href="#">Vijay Thapa</a></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

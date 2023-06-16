@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background-image: url('https://trankydesign.vn/wp-content/uploads/2021/02/noi-that-shop-thoi-trang-thiet-ke.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+}
+
+a:hover {
+    color: #ff6b81;
+}
+
+input {
+    border: 0.5px solid var(--color-gray-3);
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+.container2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img-responsive {
+    width: 200%;
+}
+
+.img-curve {
+    border-radius: 15px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-white {
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+.btn {
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: #ff4757;
+}
+
+.float-container {
+    position: relative;
+}
+
+.float-text {
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+
+fieldset {
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSSS for navbar section */
+
+.logo {
+    width: 10%;
+    float: left;
+}
+
+.menu {
+    line-height: 60px;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* .container .background-input{
+    background-color: #333;
+    position: absolute;
+} */
+
+.container form {
+    padding: 35px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+
+}
+
+.container form h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.container form input,
+.container form select {
+    -webkit-transition: 0.5s all;
+    outline: none;
+    width: 100%;
+    padding: 1em 1em 1em;
+    font-size: .9em;
+    margin: 10px 0;
+    background: #eee;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 0.3em;
+    width: 82%;
+    color: #000;
+    border-radius: 30px;
+    font-weight: 400;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.container form select option {
+    background: #fff;
+
+}
+
+.container form .form-btn {
+    background: #ea2858;
+    color: white !important;
+    text-transform: capitalize;
+    font-size: 20px;
+    width: 44%;
+    cursor: pointer;
+    padding: 0.7em 0;
+    -webkit-transition: 0.5s all;
+}
+
+.container form .form-btn:hover {
+    background: #fbd0d9;
+}
+
+.container form p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.container form .error-msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+span .fa-solid {
+    color: #ea2858;
+    font-size: 1.1em;
+    position: absolute;
+    margin-top: 25px;
+    left: 890px;
+}
+
+
+.container form a h6 {
+    font-size: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 8em;
+    color: crimson;
+    -webkit-transition: 0.5s all;
+}
+
+.container form a h6:hover {
+    color: #fff;
+}
+
+.footer p {
+    margin-left: 540px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.footer p a {
+    color: black;
+    -webkit-transition: 0.9s all;
+}
+
+.footer p a:hover {
+    color: crimson; 
+}
+
